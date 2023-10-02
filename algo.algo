@@ -1,0 +1,49 @@
+// probleme 1
+ALGORITHM somElementDistincts
+// déclaration des variables
+VAR
+    sum_distinct,i,j:INTEGER;
+    tab1 : ARRAY_OF INTEGER[4];
+    tab2 : ARRAY_OF INTEGER[5];
+    verify:BOOLEAN;
+BEGIN
+    tab1:=[3,1,7,9]
+    tab2:=[2,4,1,9,3]
+    sum_distinct:=0
+    verify:=true//l'element distinct
+    FOR i FROM 0 TO tab.length -1 STEP step 1  DO
+        FOR j FROM 0 TO tab.length -1 STEP step  DO
+            IF (tab[i]==tab[j]) THEN
+                verify:=false
+            END_IF
+            IF (verify==true) THEN
+                sum_distinct=sum_distinct + tab[i]
+            END_IF //sum_distinct=0+7
+        END_FOR
+    END_FOR
+
+END
+
+// probleme 2
+PROCEDURE dot_product()
+// déclaration des variables
+VAR
+    set1 : ARRAY_OF FLOAT[2];
+    set2 : ARRAY_OF FLOAT[2];
+    i:INTEGER;
+    ps:FLOAT;
+
+BEGIN
+        write("saisir les elements du vecteur set1")
+        read(set1[i])
+        write("saisir les elements du vecteur set2")
+        read(set2[i])
+
+    // calcul du produit scalaire
+    FOR i FROM 0 TO set.length -1 STEP 1 step  DO 
+        ps:=0
+        ps=ps+set1[i]*set2[i]
+    END_FOR
+    write("le produit scalaire est:",ps )
+END
+
